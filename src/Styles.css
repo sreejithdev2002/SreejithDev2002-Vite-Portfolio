@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&display=swap");
+
+.headerBrandName {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.headerBrandLinks {
+  list-style: decimal-leading-zero;
+  font-family: monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.NameH1{
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.SkillsH1, .ExperienceH1, .ContactH1{
+  font-family: monospace;
+  font-weight: 700;
+}
+
+#Header{
+  background-color: rgba(6, 8, 35, 0.947);
+}
+
+@keyframes running-border {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 2s steps(12) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10ch; /* Adjust depending on your text length */
+  }
+}
+
+@keyframes blink {
+  100% {
+    border-color: transparent;
+  }
+}
