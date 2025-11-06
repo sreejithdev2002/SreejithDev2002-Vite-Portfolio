@@ -6,7 +6,6 @@ import github from "../assets/Icons/github.png";
 import x from "../assets/Icons/twitter.png";
 import { saveAs } from "file-saver";
 
-import laptopImage from "../assets/Images/Laptop.png";
 import ProfilePhoto from "../assets/Images/profilePhoto.jpg";
 
 function Home() {
@@ -24,6 +23,7 @@ function Home() {
       <img
         src={ProfilePhoto}
         alt=""
+        loading="lazy"
         className="absolute lg:top-30 xl:top-40 lg:right-10 xl:right-40 2xl:right-60 hidden lg:block h-80 rounded-4xl border-blue-300 border-4 hover:scale-105 transition duration-300"
       />
       <h4 className="text-blue-300 font-mono">Hi, my name is</h4>
