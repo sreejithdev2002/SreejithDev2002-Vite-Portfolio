@@ -1,25 +1,7 @@
-import React from "react";
 import "../Styles.css";
+import educationData from "../assets/data/education";
 
 function Education() {
-  const educationData = [
-    {
-      degree: "Bachelors in Computer Science",
-      institution: "KR's Sree Narayana College, Valanchery",
-      period: "Aug 2020 - Jun 2023",
-    },
-    {
-      degree: "Central Board of Secondary Education - 12th Standard",
-      institution: "Bharatiya Vidhya Bhavan, Thirunnavaya",
-      period: "Aug 2018 - Jun 2020",
-    },
-    {
-      degree: "Central Board of Secondary Education - 10th Standard",
-      institution: "Bharatiya Vidhya Bhavan, Thirunnavaya",
-      period: "Aug 2017 - Jun 2018",
-    },
-  ];
-
   return (
     <main className="text-white text-center px-5 py-20" id="Education">
       <h2 className="text-4xl mb-20 font-mono underline decoration-wavy decoration-blue-300 ExperienceH1">
@@ -30,9 +12,10 @@ function Education() {
         {/* Center Line */}
         <div className="absolute left-1/2 transform -translate-x-1/2 md:h-full w-1 bg-blue-500" />
 
-        <div className="space-y-12">
+        <div className="space-y-6 md:space-y-12">
           {educationData.map((edu, index) => {
             const isLeft = index % 2 === 0;
+            const rotateClass = isLeft ? "md:hover:rotate-2" : "md:hover:-rotate-2";
 
             return (
               <div
@@ -42,7 +25,7 @@ function Education() {
                 }`}
               >
                 {/* Content Box */}
-                <div className="w-full md:w-5/12 bg-[#0a1331] hover:bg-blue-950 p-6 rounded-xl shadow-md transition duration-500 z-10">
+                <div className={`w-full md:w-5/12 bg-[#0a1331] hover:bg-blue-950 p-6 rounded-xl shadow-md transition duration-500 hover:scale-105 ${rotateClass}`}>
                   <h3 className="text-lg lg:text-2xl font-semibold">
                     {edu.degree}
                   </h3>

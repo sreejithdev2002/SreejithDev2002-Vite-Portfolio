@@ -1,4 +1,3 @@
-import React from "react";
 import "../Styles.css";
 import instagram from "../assets/Icons/instagram.png";
 import facebook from "../assets/Icons/facebook.png";
@@ -8,6 +7,7 @@ import x from "../assets/Icons/twitter.png";
 import { saveAs } from "file-saver";
 
 import laptopImage from "../assets/Images/Laptop.png";
+import ProfilePhoto from "../assets/Images/profilePhoto.jpg";
 
 function Home() {
   const handleDownload = () => {
@@ -22,9 +22,9 @@ function Home() {
       id="Home"
     >
       <img
-        src={laptopImage}
+        src={ProfilePhoto}
         alt=""
-        className="absolute top-10 hidden lg:block -z-[1]"
+        className="absolute lg:top-30 xl:top-40 lg:right-10 xl:right-40 2xl:right-60 hidden lg:block h-80 rounded-4xl border-blue-300 border-4 hover:scale-105 transition duration-300"
       />
       <h4 className="text-blue-300 font-mono">Hi, my name is</h4>
       <h1 className="typing-animation text-5xl py-1 z-20 NameH1">SREEJITH U</h1>
