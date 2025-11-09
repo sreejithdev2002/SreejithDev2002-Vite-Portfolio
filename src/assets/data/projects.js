@@ -5,10 +5,21 @@ import TaskZen from "../Images/TaskZen.png";
 import ProductManagement from "../Images/Product Management.png";
 import CliniCare from "../Images/CliniCare.png";
 import Tseep from "../Images/Tseep.png";
+import GrowthVerseMedia from "../Images/GrowthVerseMedia.png";
 
 const projects = [
   {
     id: 1,
+    name: "GrowthVerse Media",
+    category: "Frontend",
+    type: "Landing Page",
+    desc: "GrowthVerse Media is a data-driven digital marketing agency",
+    tech: ["React.js", "Tailwind CSS", "HTML5", "CSS3", "JavaScript"],
+    img: GrowthVerseMedia,
+    link: "https://growth-verse-media.vercel.app",
+  },
+  {
+    id: 2,
     name: "Shoooz",
     category: "Full Stack",
     type: "E-Commerce Website",
@@ -27,7 +38,7 @@ const projects = [
     link: "https://shoooz.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     name: "CliniCare Management System",
     category: "Frontend",
     type: "Management Website",
@@ -37,7 +48,7 @@ const projects = [
     link: "https://clini-care-management.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Smile Essentials Dental Clinic",
     category: "Frontend",
     type: "Landing Page",
@@ -47,7 +58,7 @@ const projects = [
     link: "https://dental-clinic-sand.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     name: "Product Management Website",
     category: "Full Stack",
     type: "E-Commerce Website",
@@ -65,7 +76,7 @@ const projects = [
     link: "https://product-management-frontend-ruby.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Expense Tracker",
     category: "Frontend",
     type: "Finance Management Website",
@@ -75,7 +86,7 @@ const projects = [
     link: "https://expense-pdf-maker.vercel.app",
   },
   {
-    id: 6,
+    id: 7,
     name: "TaskZen",
     category: "Frontend",
     type: "Task Management Website",
@@ -85,7 +96,7 @@ const projects = [
     link: "https://task-zen-kappa.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     name: "TSEEP Quiz Website",
     category: "Frontend",
     type: "Quiz Website",
