@@ -1,8 +1,18 @@
 const experienceData = [
   {
     id: 1,
+    title: "Jr Software Developer",
+    timeline: "Nov 2025 - Present",
+    link: "https://www.grapeshms.com",
+    company: "Grapes Innovative Solutions",
+    location: "Koratty, Thrissur",
+    description:
+      "Working as a Junior Software Developer at Grapes Innovative Solutions, Koratty, Thrissur. Responsible for developing and maintaining web applications, building responsive front-end interfaces, and collaborating with the team on backend integration and feature implementation.",
+  },
+  {
+    id: 2,
     title: "Web Developer",
-    timeline: "Nov 2024 - Present",
+    timeline: "Nov 2024 - Nov 2025",
     link: "https://daxoff.com",
     company: "Daxoff Hub Pvt Ltd",
     location: "North Paravur",
