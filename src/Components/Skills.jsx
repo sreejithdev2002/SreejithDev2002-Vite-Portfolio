@@ -1,90 +1,3 @@
-// import html from "../assets/Icons/html.png";
-// import css from "../assets/Icons/css.png";
-// import javascript from "../assets/Icons/javascript.png";
-// import reactjs from "../assets/Icons/reactjs.png";
-// import tailwind from "../assets/Icons/tailwindcss.png";
-// import nodejs from "../assets/Icons/nodejs.png";
-// import express from "../assets/Icons/expressjs.png";
-// import mongodb from "../assets/Icons/mongodb.png";
-// import mysql from "../assets/Icons/mysql.png";
-// import git from "../assets/Icons/git.png";
-// import github from "../assets/Icons/github.png";
-// import postman from "../assets/Icons/postman.png";
-// import vscode from "../assets/Icons/vscode.png";
-// import "../Styles.css";
-
-// function Skills() {
-//   return (
-//     <main
-//       className="text-white flex justify-center flex-col text-center px-[20vw] py-20"
-//       id="Skills"
-//     >
-//       <h2 className="text-4xl mb-20 font-mono underline decoration-wavy decoration-blue-300 decoration-auto SkillsH1">
-//         Skills
-//       </h2>
-//       <h1 className="lg:text-start text-2xl font-semibold mb-2">Tech Skills</h1>
-//       <div className="flex flex-col bg-[#0a1331] hover:bg-blue-950 hover:scale-105 transition duration-500 mt-2 rounded-md p-2 w-[100%]">
-//         <h1 className="text-lg lg:text-start">Frontend</h1>
-//         <div className="flex my-2 justify-center lg:justify-start">
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={html} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={css} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={javascript} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={reactjs} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={tailwind} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//         </div>
-//       </div>
-//       <div className="flex flex-col bg-[#0a1331] hover:bg-blue-950 hover:scale-105 transition duration-500 mt-2 rounded-md p-2 w-[100%]">
-//         <h1 className="text-lg lg:text-start">Backend</h1>
-//         <div className="flex my-2 justify-center lg:justify-start">
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={nodejs} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={express} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={mongodb} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={mysql} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//         </div>
-//       </div>
-//       <div className="flex flex-col bg-[#0a1331] hover:bg-blue-950 hover:scale-105 transition duration-500 mt-2 rounded-md p-2 w-[100%]">
-//         <h1 className="text-lg lg:text-start">Others</h1>
-//         <div className="flex my-2 justify-center lg:justify-start">
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={git} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={github} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={postman} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//           <span className="bg-white p-2 rounded mx-1 flex justify-center">
-//             <img src={vscode} alt="" className="lg:h-12 mx-2 h-8" />
-//           </span>
-//         </div>
-//       </div>
-//       <article className="flex flex-col text-start px-[20vw]"></article>
-//     </main>
-//   );
-// }
-
-// export default Skills;
-
-
 import html from "../assets/Icons/html.png";
 import css from "../assets/Icons/css.png";
 import javascript from "../assets/Icons/javascript.png";
@@ -100,47 +13,92 @@ import git from "../assets/Icons/git.png";
 import github from "../assets/Icons/github.png";
 import postman from "../assets/Icons/postman.png";
 import vscode from "../assets/Icons/vscode.png";
-import "../Styles.css";
 
 function Skills() {
-  const skills = [
-    html,
-    css,
-    javascript,
-    reactjs,
-    nextjs,
-    tailwind,
-    nodejs,
-    express,
-    mongodb,
-    mysql,
-    docker,
-    git,
-    github,
-    postman,
-    vscode,
+  const skillCategories = [
+    {
+      title: "Frontend",
+      skills: [
+        { name: "HTML5", icon: html },
+        { name: "CSS3", icon: css },
+        { name: "JavaScript", icon: javascript },
+        { name: "React.js", icon: reactjs },
+        { name: "Next.js", icon: nextjs },
+        { name: "Tailwind CSS", icon: tailwind },
+      ],
+    },
+    {
+      title: "Backend",
+      skills: [
+        { name: "Node.js", icon: nodejs },
+        { name: "Express.js", icon: express },
+        { name: "MongoDB", icon: mongodb },
+        { name: "MySQL", icon: mysql },
+      ],
+    },
+    {
+      title: "Tools & Others",
+      skills: [
+        { name: "Docker", icon: docker },
+        { name: "Git", icon: git },
+        { name: "GitHub", icon: github },
+        { name: "Postman", icon: postman },
+        { name: "VS Code", icon: vscode },
+      ],
+    },
   ];
 
   return (
-    <main
-      className="text-white flex flex-col justify-center items-center text-center px-[10vw] py-20"
+    <section
+      className="text-white flex flex-col justify-center items-center px-6 sm:px-12 md:px-24 py-28 relative"
       id="Skills"
     >
-      <h2 className="text-4xl mb-20 font-mono underline decoration-wavy decoration-blue-300 decoration-auto SkillsH1">
-        Skills
-      </h2>
+      {/* Background radial glow */}
+      <div className="absolute left-[5%] top-[20%] -z-10 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[80px] pointer-events-none"></div>
 
-      <div className="flex flex-wrap justify-center gap-4 bg-[#0a1331] rounded-md p-6 w-full max-w-4xl">
-        {skills.map((icon, index) => (
-          <span
-            key={index}
-            className="bg-white p-2 rounded flex justify-center items-center hover:scale-115 hover:-rotate-2 transition duration-300"
-          >
-            <img src={icon} alt={`skill-${index}`} className="lg:h-12 h-8 mx-2" />
-          </span>
-        ))}
+      <div className="w-full max-w-5xl mx-auto flex flex-col items-center">
+        <span className="text-blue-400 font-mono text-sm tracking-widest mb-3 uppercase">
+          My Expertise
+        </span>
+        <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-16 text-center">
+          Skills & Tech Stack
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+          {skillCategories.map((category) => (
+            <div
+              key={category.title}
+              className="glass-panel rounded-2xl p-6 flex flex-col items-start border border-white/5"
+            >
+              <h3 className="text-xl font-bold mb-6 text-blue-300 border-b border-white/10 pb-2 w-full text-left">
+                {category.title}
+              </h3>
+              
+              <div className="grid grid-cols-2 gap-3 w-full">
+                {category.skills.map((skill) => (
+                  <div
+                    key={skill.name}
+                    className="flex items-center gap-3 bg-white/5 border border-white/5 hover:border-blue-500/30 hover:bg-white/10 p-2.5 rounded-xl transition-all duration-300 hover:scale-[1.03] group cursor-default"
+                  >
+                    <div className="w-8 h-8 rounded-lg bg-white p-1.5 flex justify-center items-center shrink-0">
+                      <img
+                        src={skill.icon}
+                        alt={skill.name}
+                        loading="lazy"
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </div>
+                    <span className="text-xs font-semibold text-slate-300 group-hover:text-white transition-colors text-left break-words">
+                      {skill.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </main>
+    </section>
   );
 }
 
